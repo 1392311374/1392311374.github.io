@@ -6,3 +6,5 @@ function center (){
 }
 var dom=document.getElementsByClassName("tex")[0]
 dom.style.textAlign="center"
+var dom1=document.getElementsByTagName("h1")[0]
+dom1.style.textAlign="center"
