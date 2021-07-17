@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- These belongs to the HTML file where you want C3 to work - put these lines into your <head> tag -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="chart"></div>
+    <div id="chart2"></div>
+  </body>
+
+  <script>
+  var chart = c3.generate({
+    bindto:'#chart',
+    data:{
+      columns:[
+        ['peach',5,10,50],
+        ['grape',10,15,50],
+      ],
+      type:'bar',
+      labels: true
+    },
+    donut:{
+      title:"fruits love:",
+    }
+  });
+
+
+var chart2 = c3.generate({
+  bindto:'#chart2',
+  date:{
+    columns:[
+    ['data1',200,-100,300,-200]
+    ['date2',150,100,-100,-150]
+  ],
+  type:'bar',
+  labels: true
+  }
+});
+
+  </script>
+  </html>
